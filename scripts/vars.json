@@ -1,0 +1,11 @@
+{
+    "label": {
+        "person": {
+            "first": "first person",
+            "second": "second person",
+            "third": "third person",
+            "singular": "singular",
+            "plural": "plural"
+        }
+    }
+}
