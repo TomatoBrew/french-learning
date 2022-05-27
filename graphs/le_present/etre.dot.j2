@@ -1,13 +1,13 @@
-digraph present_ir2 {
+digraph etre {
     rankdir="LR"
-    base [ label="infintive -ir" ]
+    base [ label="être" ]
 
-    fps [ label="-s" ]
-    sps [ label="-s" ]
-    tps [ label="-t" ]
-    fpp [ label="-ons" ]
-    spp [ label="-ez" ]
-    tpp [ label="-ent" ]
+    fps [ label="suis" ]
+    sps [ label="es" ]
+    tps [ label="est" ]
+    fpp [ label="sommes" ]
+    spp [ label="êtes" ]
+    tpp [ label="sont" ]
 
     base -> fps [ label="{{ label.person.first }} {{ label.person.singular }}" ]
     base -> sps [ label="{{ label.person.second }} {{ label.person.singular }}" ]

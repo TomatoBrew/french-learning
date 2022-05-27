@@ -1,13 +1,13 @@
-digraph present_ir2 {
+digraph present_avoir {
     rankdir="LR"
-    base [ label="infintive -ir" ]
+    base [ label="avoir" ]
 
-    fps [ label="-s" ]
-    sps [ label="-s" ]
-    tps [ label="-t" ]
-    fpp [ label="-ons" ]
-    spp [ label="-ez" ]
-    tpp [ label="-ent" ]
+    fps [ label="ai" ]
+    sps [ label="as" ]
+    tps [ label="a" ]
+    fpp [ label="avons" ]
+    spp [ label="avez" ]
+    tpp [ label="ont" ]
 
     base -> fps [ label="{{ label.person.first }} {{ label.person.singular }}" ]
     base -> sps [ label="{{ label.person.second }} {{ label.person.singular }}" ]

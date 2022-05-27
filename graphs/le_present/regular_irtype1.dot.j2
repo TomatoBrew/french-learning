@@ -1,0 +1,18 @@
+digraph present_ir1 {
+    rankdir="LR"
+    base [ label="infintive -ir" ]
+
+    fps [ label="-is" ]
+    sps [ label="-is" ]
+    tps [ label="-it" ]
+    fpp [ label="-issons" ]
+    spp [ label="-issez" ]
+    tpp [ label="-issent" ]
+
+    base -> fps [ label="{{ label.person.first }} {{ label.person.singular }}" ]
+    base -> sps [ label="{{ label.person.second }} {{ label.person.singular }}" ]
+    base -> tps [ label="{{ label.person.third }} {{ label.person.singular }}" ]
+    base -> fpp [ label="{{ label.person.first }} {{ label.person.singular }}" ]
+    base -> spp [ label="{{ label.person.second }} {{ label.person.singular }}" ]
+    base -> tpp [ label="{{ label.person.third }} {{ label.person.singular }}" ]
+}
