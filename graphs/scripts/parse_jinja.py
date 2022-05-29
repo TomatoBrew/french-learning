@@ -1,20 +1,9 @@
 #!/usb/bin/env python3
-import sys
 import json
+import re
+from graphviz import Source
 from argparse import ArgumentParser
 from jinja2 import Template
-
-def improved_open(filename=None):
-    if filename and filename != '-':
-        fh = open(filename, 'w')
-    else:
-        fh = sys.stdout
-    
-    try:
-        yield fh
-    finally:
-        if fh is not sys.stdout():
-            fh.close()
 
 
 def get_data(datafile):
@@ -34,13 +23,23 @@ def parse_args():
     parser.add_argument("-t", "--template", dest="template",
         help="template file to be parsed", required=True)
     parser.add_argument("-o", "--output", dest="output",
-        help="location to write the result to default=None", default=None)
+        help="location to write the result to default=./gen", default="./gen")
     return parser.parse_args()
 
 
 
 if __name__ == '__main__':
     args = parse_args()
-    data = get_data(args.data)
+    data = get_data("./vars.json")
+    data = data | get_data(args.data)
     template = Template(get_template(args.template))
-    print(template.render(data))
+    temp = template.render(data)
+
+    print(temp)
+    print(re.search("}", temp))
+
+    s = Source(temp)
+    
+    #print(s.__dict__)
+    #print(type(s.unflatten()))
+    #s.render(directory=args.output, format='jpg')

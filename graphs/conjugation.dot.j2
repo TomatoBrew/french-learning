@@ -1,0 +1,20 @@
+{% for v in verb %}
+digraph {{ v.gname }} {
+    rankdir="LR"
+    {{ v.gname }} [ label="{{ v.root }}"]
+
+    {{ v.gname }}_fps [ label="{{ v.conjugation.fps }}"]
+    {{ v.gname }}_sps [ label="{{ v.conjugation.sps }}"]
+    {{ v.gname }}_tps [ label="{{ v.conjugation.tps }}"]
+    {{ v.gname }}_fpp [ label="{{ v.conjugation.fpp }}"]
+    {{ v.gname }}_spp [ label="{{ v.conjugation.spp }}"]
+    {{ v.gname }}_tpp [ label="{{ v.conjugation.tpp }}"]
+
+    {{ v.gname }} -> {{ v.gname }}_fps [ label="{{ label.person.first }} {{ label.person.singular }}" ]
+    {{ v.gname }} -> {{ v.gname }}_sps [ label="{{ label.person.second }} {{ label.person.singular }}" ]
+    {{ v.gname }} -> {{ v.gname }}_tps [ label="{{ label.person.third }} {{ label.person.singular }}" ]
+    {{ v.gname }} -> {{ v.gname }}_fpp [ label="{{ label.person.first }} {{ label.person.plural }}" ]
+    {{ v.gname }} -> {{ v.gname }}_spp [ label="{{ label.person.second }} {{ label.person.plural }}" ]
+    {{ v.gname }} -> {{ v.gname }}_tpp [ label="{{ label.person.third }} {{ label.person.plural }}" ]
+}
+{%endfor%}

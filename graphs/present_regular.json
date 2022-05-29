@@ -1,0 +1,52 @@
+{ "verb":
+    [
+    {
+        "gname": "regular_er",
+        "root": "infinitve -er",
+        "conjugation": {
+            "fps": "-e",
+            "sps": "-es",
+            "tps": "-e",
+            "fpp": "-ons",
+            "spp": "-ez",
+            "tpp": "-ent"
+        }
+    },
+    {
+        "gname": "regular_irtype1",
+        "root": "infinitive -ir",
+        "conjugation": {
+            "fps": "-is",
+            "sps": "-is",
+            "tps": "-s",
+            "fpp": "-issons",
+            "spp": "-issez",
+            "tpp": "-issent"
+        }
+    },
+    {
+        "gname": "regular_irtype2",
+        "root": "infinitve -ir",
+        "conjugation": {
+            "fps": "-s",
+            "sps": "-s",
+            "tps": "-t",
+            "fpp": "-ons",
+            "spp": "-ez",
+            "tpp": "-ent"
+        }
+    },
+    {
+        "gname": "regular_re",
+        "root": "infinitve -re",
+        "conjugation": {
+            "fps": "-s",
+            "sps": "-s",
+            "tps": "-t / -",
+            "fpp": "-ons",
+            "spp": "-ez",
+            "tpp": "-ent"
+        }
+    }
+]
+}

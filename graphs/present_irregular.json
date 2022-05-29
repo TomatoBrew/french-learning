@@ -1,0 +1,52 @@
+{"verb":
+[
+    {
+        "gname": "avoir",
+        "root": "avoir",
+        "conjugation": {
+            "fps": "ai",
+            "sps": "as",
+            "tps": "a",
+            "fpp": "avons",
+            "spp": "avez",
+            "tpp": "ont"
+        }
+    },
+    {
+        "gname": "etre",
+        "root": "être",
+        "conjugation": {
+            "fps": "suis",
+            "sps": "es",
+            "tps": "est",
+            "fpp": "sommes",
+            "spp": "êtes",
+            "tpp": "sont"
+        }
+    },
+    {
+        "gname": "aller",
+        "root": "aller",
+        "conjugation": {
+            "fps": "vais",
+            "sps": "vas",
+            "tps": "va",
+            "fpp": "allons",
+            "spp": "allez",
+            "tpp": "vont"
+        }
+    },
+    {
+        "gname": "faire",
+        "root": "faire",
+        "conjugation": {
+            "fps": "fais",
+            "sps": "fais",
+            "tps": "fait",
+            "fpp": "faisons",
+            "spp": "faises",
+            "tpp": "font"
+        }
+    }
+]
+}
